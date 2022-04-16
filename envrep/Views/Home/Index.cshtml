@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model envrep.Models.ListModel
+    
+}
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.temp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hum)
+        </th>
+         <th>
+            @Html.DisplayNameFor(model => model.co2)
+        </th>
+        <th></th>
+    </tr>
+
+
+@foreach (var item in Model.Records) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.temp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.co2)
+        </td>
+    </tr>
+}
+</table>

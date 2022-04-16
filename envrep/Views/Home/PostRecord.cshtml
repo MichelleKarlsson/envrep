@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "PostRecord";
+    @model envrep.Models.RecordPostViewModel
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="page">
+    <h2>ID: @Html.DisplayFor(model => model.id)</h2>
+    <h2>TEMP: @Html.DisplayFor(model => model.temp)</h2>
+    <h2>HUM: @Html.DisplayFor(model => model.hum)</h2>
+    <h2>CO2: @Html.DisplayFor(model => model.co2)</h2>
+</div>
